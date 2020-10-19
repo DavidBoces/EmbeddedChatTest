@@ -1,23 +1,13 @@
 <html>
 	<head>
 		<title>Live Agent</title>
-		
-		<!--script type="text/javascript">
-		if (!window._laq) { window._laq = []; }
-		window._laq.push(function(){liveagent.showWhenOnline('5735E00000000Yj', document.getElementById('liveagent_button_online_5735E00000000Yj'));
-		liveagent.showWhenOffline('5735E00000000Yj', document.getElementById('liveagent_button_offline_5735E00000000Yj'));
-		});</script-->
+
 		<script type="text/javascript">
 		   if (!window._laq) { window._laq = []; }
 		   window._laq.push(function(){liveagent.showWhenOnline('5735E00000000Yj', document.getElementById('liveagent_button_online_5735E00000000Yj'));
 		   liveagent.showWhenOffline('5735E00000000Yj', document.getElementById('liveagent_button_offline_5735E00000000Yj'));
 		   });
 		</script>
-
-		<!--script type='text/javascript' src='https://c.la2-c1cs-fra.salesforceliveagent.com/content/g/js/50.0/deployment.js'></script>
-		<script type='text/javascript'>
-		liveagent.init('https://d.la2-c1cs-fra.salesforceliveagent.com/chat', '5725E00000000FR', '00D5E00000091lt');
-		</script-->
 		<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 		<script type='text/javascript'>
 		   var initESW = function(gslbBaseURL) {
@@ -25,7 +15,7 @@
 			embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 		   
 			//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-			//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+			embedded_svc.settings.disabledMinimizedText = 'No hay agentes'; //(Defaults to Agent Offline)
 		   
 			//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 			//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
@@ -71,16 +61,6 @@
 		   }
 		</script>		
 ​
-		<!--Styles-->
-		<!--style type="text/css">
-			body {
-				background-color: #FFFFFF;
-			}
-			#logo {
-				width: 270px;
-				height: 140px;
-			}
-		</style-->
 		<style type='text/css'>
 		   .embeddedServiceHelpButton .helpButton .uiButton {
 		   background-color: #005290;
