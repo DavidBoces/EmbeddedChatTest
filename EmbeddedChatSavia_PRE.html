@@ -1,104 +1,101 @@
 <html>
-	<head>
-		<title>Live Agent</title>
-
-		<script type="text/javascript">
-		   if (!window._laq) { window._laq = []; }
-		   window._laq.push(function(){liveagent.showWhenOnline('5735E00000000Yj', document.getElementById('liveagent_button_online_5735E00000000Yj'));
-		   liveagent.showWhenOffline('5735E00000000Yj', document.getElementById('liveagent_button_offline_5735E00000000Yj'));
-		   });
-		</script>
-		<!-- sacado de snippet de Embedded Service Deployment Settings-->
-		<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript'>
-	var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-
-		embedded_svc.settings.defaultMinimizedText = 'Chatea con nosotros'; //(Defaults to Chat with an Expert)
-		embedded_svc.settings.disabledMinimizedText = 'No hay agentes'; //(Defaults to Agent Offline)
-
-		embedded_svc.settings.loadingText = 'Cargando'; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
-		// Settings for Chat
-		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-			// Returns a valid button ID.
-		//};
-		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
-
-		embedded_svc.init(
-			'https://mapfresaluddigital--preprod.my.salesforce.com',
-			'https://preprod-prechat.cs80.force.com/chatasistencia',
-			gslbBaseURL,
-			'00D250000000hUd',
-			'SaviaEmbeddedChatWindow',
-			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-lo2.salesforceliveagent.com/content',
-				deploymentId: '572250000004CjC',
-				buttonId: '573250000004Cpy',
-				baseLiveAgentURL: 'https://d.la1-c1cs-lo2.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I250000004HV7EAM_1762306ad3e',
-				isOfflineSupportEnabled: false
-			}
-		);
-	};
-
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://mapfresaluddigital--preprod.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
-</script>
-​		<!-- HASTA AQUÍ Embedded Service Deployment Settings-->
-<!--El siguiente estilo también está sacado de Embedded Deployment Settings-->
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #FF3975;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #FF3975;
-	}
-</style>​
-	</head>
-	<body>
-		<br/><br/><br/>
-		<center>
-			<img id="logo" src="https://bopiweb.com/imagenes/6046/tomo.1.M-3746497-3.jpg" />
-			<br/><br/><br/>
-			<h1 style="font-size: 26px;">Bienvenido a la p&aacute;gina de Soporte de SAVIA</h1>
-		</center>
-		
-		<br/><br/><br/>
-		<table align="center">
-			<tr>
-				<td>
-				<!--sacado de snippet Chat Buttons & Invitations-->
-					<a id="liveagent_button_online_573250000004Cpy" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573250000004Cpy')">
-					Online Chat Content
-					</a>
-					<div id="liveagent_button_offline_573250000004Cpy" style="display: none;">
-					Offline Chat Content
-					</div>
-				</td>
-			</tr>
-		</table>
-		
-		<br/><br/><br/>
-		<center>
-			<h2 style="font-size: 14px;">Pulse sobre el icono para comenzar una conversaci&oacute;n con uno de nuestros agentes</h2>
-		</center>
-	</body>
+   <head>
+      <title>Live Agent</title>
+      <script type="text/javascript">
+         if (!window._laq) { window._laq = []; }
+         window._laq.push(function(){liveagent.showWhenOnline('5735E00000000Yj', document.getElementById('liveagent_button_online_5735E00000000Yj'));
+         liveagent.showWhenOffline('5735E00000000Yj', document.getElementById('liveagent_button_offline_5735E00000000Yj'));
+         });
+      </script>
+      <!-- sacado de snippet de Embedded Service Deployment Settings-->
+      <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+      <script type='text/javascript'>
+         var initESW = function(gslbBaseURL) {
+         	embedded_svc.settings.displayHelpButton = true; //Or false
+         	embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+         
+         	embedded_svc.settings.defaultMinimizedText = 'Chatea con nosotros'; //(Defaults to Chat with an Expert)
+         	embedded_svc.settings.disabledMinimizedText = 'No hay agentes'; //(Defaults to Agent Offline)
+         
+         	embedded_svc.settings.loadingText = 'Cargando'; //(Defaults to Loading)
+         	//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+         
+         	// Settings for Chat
+         	//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+         		// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+         		// Returns a valid button ID.
+         	//};
+         	//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+         	//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+         	//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+         
+         	embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+         	embedded_svc.settings.entryFeature = 'LiveAgent';
+         
+         	embedded_svc.init(
+         		'https://mapfresaluddigital--preprod.my.salesforce.com',
+         		'https://preprod-prechat.cs80.force.com/chatasistencia',
+         		gslbBaseURL,
+         		'00D250000000hUd',
+         		'SaviaEmbeddedChatWindow',
+         		{
+         			baseLiveAgentContentURL: 'https://c.la1-c1cs-lo2.salesforceliveagent.com/content',
+         			deploymentId: '572250000004CjC',
+         			buttonId: '573250000004Cpy',
+         			baseLiveAgentURL: 'https://d.la1-c1cs-lo2.salesforceliveagent.com/chat',
+         			eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I250000004HV7EAM_1762306ad3e',
+         			isOfflineSupportEnabled: false
+         		}
+         	);
+         };
+         
+         if (!window.embedded_svc) {
+         	var s = document.createElement('script');
+         	s.setAttribute('src', 'https://mapfresaluddigital--preprod.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+         	s.onload = function() {
+         		initESW(null);
+         	};
+         	document.body.appendChild(s);
+         } else {
+         	initESW('https://service.force.com');
+         }
+      </script>
+      <!-- HASTA AQUÍ Embedded Service Deployment Settings-->
+      <!--El siguiente estilo también está sacado de Embedded Deployment Settings-->
+      <style type='text/css'>
+         .embeddedServiceHelpButton .helpButton .uiButton {
+         background-color: #FF3975;
+         font-family: "Arial", sans-serif;
+         }
+         .embeddedServiceHelpButton .helpButton .uiButton:focus {
+         outline: 1px solid #FF3975;
+         }
+      </style>
+   </head>
+   <body>
+      <br/><br/><br/>
+      <center>
+         <img id="logo" src="https://bopiweb.com/imagenes/6046/tomo.1.M-3746497-3.jpg" />
+         <br/><br/><br/>
+         <h1 style="font-size: 26px;">Bienvenido a la p&aacute;gina de Soporte de SAVIA</h1>
+      </center>
+      <br/><br/><br/>
+      <table align="center">
+         <tr>
+            <td>
+               <!--sacado de snippet Chat Buttons & Invitations-->
+               <a id="liveagent_button_online_573250000004Cpy" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573250000004Cpy')">
+               Online Chat Content
+               </a>
+               <div id="liveagent_button_offline_573250000004Cpy" style="display: none;">
+                  Offline Chat Content
+               </div>
+            </td>
+         </tr>
+      </table>
+      <br/><br/><br/>
+      <center>
+         <h2 style="font-size: 14px;">Pulse sobre el icono para comenzar una conversaci&oacute;n con uno de nuestros agentes</h2>
+      </center>
+   </body>
 </html>
